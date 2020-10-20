@@ -81,6 +81,7 @@
 
   <link rel="stylesheet" href="{{ pathto('_static/css/github-button.css', 1) }}" type="text/css" />
   <script type="text/javascript" src="{{ pathto('_static/js/github-button.js', 1) }}"></script>
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   {# OPENSEARCH #}
   {%- if use_opensearch %}
@@ -235,6 +236,8 @@
       </nav>
 
 
+      <!-- https://github.com/netlify/netlify-identity-widget -->
+      <div data-netlify-identity-menu></div>
       <div class="wy-nav-content">
         {%- block content %}
         {% if theme_style_external_links|tobool %}
